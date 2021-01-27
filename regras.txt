@@ -1,0 +1,50 @@
+O HASH DA API JWT JSON
+// Your Hash: b5a2d9853948bd1618a50ae17bfdd047
+// Your String: apiteste
+
+
+Bom dia Mário, tudo bem?
+segue desafio
+Desafio,
+
+Desenvolver uma API para cadastrar usuário e perfil de acesso.
+CADASTRO DE USUÁRIO
+- nome
+- idade
+- cidade
+- estado
+- usuario
+- senha
+PERFIL DE ACESSO
+- tipo (USUARIO, ADMINISTRADOR)
+- funcionalidade - Array de funcionalidades ex: INSERIR, ATUALIZAR, DELETAR
+
+o usuário deve ter vinculo com o perfil de acesso.
+
+A api deve verificar sempre se o usuário tem permissão para realizar a operação, ou seja, 
+se cadastrar um usuário que não pode atualizar,
+ao tentar atualizar a api deve retornar o aviso que o perfil do usuário não tem permissão 
+para atualização.
+
+Padronizar a api para retornar no seguinte formato:
+
+{
+"statusCode": 200,
+"message": "Usuário atualizado com sucesso!",
+"data": {
+"nome": "Teste"
+}
+}
+
+
+O padrão acima pode ser seguido para todo os demais retornos, 
+no cado do field data, pode retornar outra coisa não necessariamente ser um objeto.
+
+Autenticação, utilizar o JWT para gerar e validar token, torna-se necessário criar
+uma rotina de login para para gerar um token de autenticação de cada serviço da api,
+ou seja, todo usuário que deseja utilizar a api deve ter um token valido obtido através
+ de uma rotina de login.
+se ainda não tiver tido contato nestjs pode usar nodejs com express mesmo
+qualquer dúvida me avise
+vou te dar como prazo final dia 26/01 para entrega
+espero de tudo certo para que já possamos começar a trabalhar juntos :)
